@@ -1,0 +1,17 @@
+{
+  "name": "189 Formulações Magistrais",
+  "short_name": "189 Fórmulas",
+  "description": "Guia prático de formulações magistrais em PDF.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6f7f9",
+  "theme_color": "#102957",
+  "icons": [
+    {
+      "src": "assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

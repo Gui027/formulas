@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="189 Formulações Magistrais">
+  <defs>
+    <linearGradient id="background" x1="72" y1="40" x2="438" y2="476" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#204681"/>
+      <stop offset="1" stop-color="#0d244f"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="40" y1="88" x2="468" y2="422" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#35d1bc"/>
+      <stop offset="1" stop-color="#169185"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="205" y1="110" x2="338" y2="274" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffe48d"/>
+      <stop offset="1" stop-color="#e6ad36"/>
+    </linearGradient>
+    <clipPath id="tile">
+      <rect width="512" height="512" rx="112"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#tile)">
+  <rect width="512" height="512" rx="112" fill="url(#background)"/>
+  <path d="M-26 143C91 82 151 75 230 109c94 40 155 26 308-54v92c-139 78-236 95-332 48-69-34-123-24-232 40z" fill="url(#wave)" opacity=".95"/>
+  <path d="M-12 430c122-93 227-111 336-53 68 36 124 35 208-4v139H-12z" fill="url(#wave)" opacity=".9"/>
+  <path d="M326 103a33 33 0 0 1 48 45L250 291l-52-44z" fill="url(#gold)"/>
+  <circle cx="348" cy="124" r="31" fill="#ffe18a"/>
+  <path d="M112 252h288c-5 104-58 174-144 174s-139-70-144-174z" fill="#fff"/>
+  <path d="M143 286h226c-18 69-56 104-113 104s-95-35-113-104z" fill="#dff8f4"/>
+  <path d="M128 252h256" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="34"/>
+  <path d="M190 440h132" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="24"/>
+  <path d="M166 306c25 14 55 21 90 21s65-7 90-21" fill="none" stroke="#24ae9f" stroke-linecap="round" stroke-width="16"/>
+  </g>
+</svg>
