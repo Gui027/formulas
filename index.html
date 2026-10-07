@@ -11,6 +11,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','980637424306975');
+    fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=980637424306975&amp;ev=PageView&amp;noscript=1"
+    alt=""></noscript>
+  <!-- End Meta Pixel Code -->
   <style>
     :root{--navy:#18366d;--navy-deep:#102957;--teal:#24ae9f;--teal-dark:#168b80;--mint:#eaf8f5;--sand:#f7f2e7;--paper:#f6f7f9;--ink:#25375e;--red:#c82e34;--white:#fff;--shadow:0 20px 50px rgba(24,54,109,.12)}
     *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:24px}
@@ -83,6 +100,7 @@
     const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
     const mobileCta=document.getElementById('mobileCta'),offerSection=document.getElementById('oferta');
     const offerObserver=new IntersectionObserver(([entry])=>{mobileCta.classList.toggle('is-hidden',entry.isIntersecting);mobileCta.setAttribute('aria-hidden',String(entry.isIntersecting))},{threshold:0,rootMargin:'0px 0px -10% 0px'});offerObserver.observe(offerSection);
+    document.querySelectorAll('[data-checkout]').forEach(link=>link.addEventListener('click',()=>{const essential=link.id==='essentialCta';fbq('track','InitiateCheckout',{content_name:essential?'Guia Essencial':'Guia Completo',content_type:'product',currency:'BRL',value:essential?29.90:67})}));
   </script>
 </body>
 </html>
